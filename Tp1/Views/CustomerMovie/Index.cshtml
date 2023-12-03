@@ -1,0 +1,11 @@
+﻿@model Tp1.Models.CustomerMovieVM
+
+<h1>Movies and Customer </h1>
+<div>Customer : @Model.customer.Name</div>
+<div>Movies:</div>
+<ul>
+	@foreach (Movie movie in Model.movies)
+	{
+		<li>@movie.Name</li>
+	}
+</ul>
